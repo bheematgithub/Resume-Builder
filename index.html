@@ -72,10 +72,20 @@
                         
                         <label for="phone">Phone</label>
 
-                        <input type="tel" id="phone" name="phone" required><br>
-
+                        <input type="tel" id="phone" pattern="[0-9]{10}" name="phone" required><br>
+                        
                        
-
+                        <script>
+                            var phoneInput = document.getElementById("phone");                        
+                            phoneInput.addEventListener("blur", function() {
+                              if (!phoneInput.validity.valid) {
+                                alert("Please enter a valid 10-digit phone number.");
+                                setTimeout(function() {
+                                phoneInput.focus();
+                                }, 0);
+                              }
+                            });
+                          </script>
                         <label for="github">GitHub</label>
 
                         <input type="text" id="github" name="github"  required>
