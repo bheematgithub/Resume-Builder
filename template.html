@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>${firstName} - Resume</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    </head>
+    <body class="bg-white">
+        <div class="container p-4">
+            <section class="container text-center">
+                <h1>${firstName}</h1>
+               <nav class="d-flex justify-content-around py-4">
+
+                <a href="" class="text-secondary ">${phone}</a> |
+                <a href="" class="text-secondary ">${github}</a> |
+                <a href="" class="text-secondary ">${email}</a> |
+                <a href="" class="text-secondary ">${linkedin}</a> | 
+                <a href="" class="text-secondary ">${personalPage}</a> 
+
+               </nav>
+            </section>
+
+
+
+            <div class="container">
+                <div class="objective">
+                     <h3>Objective</h3><br>
+                     <p>${objective}</p>
+                </div>
+                <div class="Skills">
+                    <h3>Skills</h3><br>
+                    <p>${skills}</p>
+                </div>
+                <div class="Projects">
+                    <h3>Projects</h3><br>
+                    <p>${projects}</p>
+                </div>
+                <div class="Work-Experience">
+                    <h3>Work Experience</h3><br>
+                    <p>${workExperience}</p>
+                </div>
+                <div class="Education">
+                    <h3>Education</h3><br>
+                    <p>${education}</p>
+                </div>
+                <div class="Certification">
+                    <h3>Certification</h3><br>
+                    <p>${certification}</p>
+                </div>
+                <div class="AAA">
+                    <h3>Achievements/Activity/Awards</h3><br>
+                    <p>${achievements}</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let interval=setTimeout(()=>{
+                window.print();
+            },2000);
+        </script>
+    </body>
+</html>
